@@ -273,9 +273,9 @@ impl GameTime<Local> {
         self.0 <= system_time.0
     }
 
-    - csak a local kliensnél van rollback, ha más lát, nála nincs
-    - ha mást látok támadnim, az animáció nem fut le végig
-    - localban viszont lassabb mint kellene sztem
+    // - csak a local kliensnél van rollback, ha más lát, nála nincs
+    // - ha mást látok támadnim, az animáció nem fut le végig
+    // - localban viszont lassabb mint kellene sztem
 
     pub fn has_not_passed_yet(&self, other: GameTime<Local>) -> bool {
         self.0 > other.0
