@@ -3,8 +3,8 @@ use nalgebra::{Matrix3, Matrix4, Point2, Point3, Rotation3, Vector2, Vector3};
 use serde::Deserialize;
 use serde::Serialize;
 
-use serde::export::fmt::Error;
-use serde::export::{Formatter, PhantomData};
+use std::fmt::{Error,Formatter};
+use std::marker::PhantomData;
 use std::time::{Duration, Instant};
 
 pub type Mat3 = Matrix3<f32>;

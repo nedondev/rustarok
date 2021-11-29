@@ -3,7 +3,7 @@ use crate::grf::binary_reader::BinaryReader;
 use crate::packets::from_server::FromServerPacket;
 use crate::packets::to_server::{Packet, PacketReadErr, ToServerPacket};
 use hexplay::{HexView, HexViewBuilder};
-use serde::export::fmt::Debug;
+use std::fmt::Debug;
 use std::io::prelude::*;
 use std::io::{Error, Read};
 use std::net::TcpStream;
